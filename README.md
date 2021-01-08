@@ -2,6 +2,11 @@
 
 ![Debug Tab UI in VS Code](assets/screenshot.png)
 
+## Prerequisites
+
+- Docker for Desktop (tested on macOS, might work on Windows)
+- VS Code with *Remote - Containers* extension installed
+
 ## Usage
 
 1. Clone the repository
