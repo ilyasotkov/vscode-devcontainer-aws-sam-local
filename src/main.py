@@ -1,8 +1,8 @@
-import debugpy
+# import debugpy
 
-debugpy.listen(("0.0.0.0", 5890))
-print("Waiting for debugger client to attach")
-debugpy.wait_for_client()
+# debugpy.listen(("0.0.0.0", 5890))
+# print("Waiting for debugger client to attach")
+# debugpy.wait_for_client()
 
 import json
 
