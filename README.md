@@ -1,4 +1,4 @@
-# Debug AWS SAM Applications Locally with VS Code Dev Containers
+# Invoke AWS SAM functions locally from VS Code Dev Containers
 
 ![Debug Tab UI in VS Code](assets/screenshot.png)
 
