@@ -1,0 +1,8 @@
+version=0.1
+
+[default.deploy.parameters]
+stack_name = "aws-sam-local-python-devcontainer"
+region = "eu-west-1"
+capabilities = "CAPABILITY_NAMED_IAM"
+confirm_changeset = false
+fail_on_empty_changeset = false

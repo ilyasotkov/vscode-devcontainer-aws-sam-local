@@ -1,0 +1,55 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "sam build",
+      "type": "shell",
+      "command": "sam",
+      "args": [
+        "build"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Debug Python Lambda Function",
+      "type": "shell",
+      "command": "sam",
+      "dependsOn": [
+        "sam build"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "args": [
+        "local",
+        "invoke",
+        "--skip-pull-image",
+        "ServerlessFunction",
+        "--event=events/event.json",
+        "--debug-port",
+        "5890"
+      ],
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": [
+          {
+            // Use regex that never matches anything.
+            "regexp": "^(x)(\\b)(x)$",
+            "file": 1,
+            "location": 2,
+            "message": 3
+          }
+        ],
+        "background": {
+          // This is how the debugger knows when it can attach
+          "activeOnStart": true,
+          "beginsPattern": "^Building image$",
+          "endsPattern": "^Waiting for debugger client to attach$"
+        }
+      }
+    }
+  ]
+}

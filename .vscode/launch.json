@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Remote Attach",
+      "type": "python",
+      "request": "attach",
+      "preLaunchTask": "Debug Python Lambda Function",
+      "port": 5890,
+      "host": "host.docker.internal",
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/src",
+          "remoteRoot": "/var/task"
+        }
+      ]
+    }
+  ]
+}
