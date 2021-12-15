@@ -6,7 +6,9 @@
     "target": "dev"
   },
   "runArgs": [
-    "--add-host=host.docker.internal:host-gateway"
+    // Uncomment line below for Linux hosts with Docker >=20.10.x
+    // "--add-host=host.docker.internal:host-gateway"
+    // Uncomment line below for Linux hosts with Docker <=20.10.x
     // "--add-host=host.docker.internal:172.17.0.1"
   ],
   "shutdownAction": "stopContainer",
