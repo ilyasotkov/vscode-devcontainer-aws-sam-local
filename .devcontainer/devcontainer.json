@@ -5,6 +5,10 @@
     "context": "..",
     "target": "dev"
   },
+  "runArgs": [
+    "--add-host=host.docker.internal:host-gateway"
+    // "--add-host=host.docker.internal:172.17.0.1"
+  ],
   "shutdownAction": "stopContainer",
   "workspaceFolder": "/workspace",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",

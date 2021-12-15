@@ -9,7 +9,3 @@ RUN curl -fsSLO https://download.docker.com/linux/static/stable/x86_64/docker-${
 
 COPY requirements-dev.txt ./
 RUN pip3 install -r requirements-dev.txt
-
-# Patch for https://github.com/aws/aws-sam-cli/issues/2492
-RUN find /usr/local/lib/python3.8/site-packages/samcli/local/docker/container.py \
-        -type f -exec sed -i 's/localhost/host\.docker\.internal/g' {} \;

@@ -29,8 +29,9 @@
         "--skip-pull-image",
         "ServerlessFunction",
         "--event=events/event.json",
-        "--debug-port",
-        "5890"
+        "--debug-port=5890",
+        "--container-host-interface=0.0.0.0",
+        "--container-host=host.docker.internal"
       ],
       "isBackground": true,
       "problemMatcher": {
