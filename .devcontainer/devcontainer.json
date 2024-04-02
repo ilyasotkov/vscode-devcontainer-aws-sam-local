@@ -23,12 +23,12 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-python.python",
-        "ms-python.vscode-pylance",
-        "njpwerner.autodocstring",
-        "ms-azuretools.vscode-docker",
-        "redhat.vscode-yaml",
-        "kddejong.vscode-cfn-lint"
+        "ms-python.python@2024.2.1",
+        "ms-python.vscode-pylance@2024.3.2",
+        "njpwerner.autodocstring@0.6.1",
+        "ms-azuretools.vscode-docker@1.29.0",
+        "redhat.vscode-yaml@1.14.0",
+        "kddejong.vscode-cfn-lint@0.25.4"
       ],
       "settings": {
         "python.pythonPath": "/usr/local/bin/python"
