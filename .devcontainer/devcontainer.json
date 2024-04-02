@@ -6,9 +6,9 @@
     "target": "dev"
   },
   "runArgs": [
-    // Needed for Linux and GitHub Codespaces, including GitHub Codespaces
+    // Needed for Linux and GitHub Codespaces, feel free to remove if you only need this to work on macOS
     "--add-host=host.docker.internal:host-gateway"
-    // Use this for Docker Engine <20.10.x
+    // For Linux with Docker Engine <20.10.x, use this instead
     // "--add-host=host.docker.internal:172.17.0.1"
   ],
   "shutdownAction": "stopContainer",
