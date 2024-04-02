@@ -6,9 +6,9 @@
     "target": "dev"
   },
   "runArgs": [
-    // Uncomment line below for Linux hosts with Docker >=20.10.x
-    // "--add-host=host.docker.internal:host-gateway"
-    // Uncomment line below for Linux hosts with Docker <20.10.x
+    // Needed for Linux and GitHub Codespaces, including GitHub Codespaces
+    "--add-host=host.docker.internal:host-gateway"
+    // Use this for Docker Engine <20.10.x
     // "--add-host=host.docker.internal:172.17.0.1"
   ],
   "shutdownAction": "stopContainer",
