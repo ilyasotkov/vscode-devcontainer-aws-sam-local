@@ -1,4 +1,4 @@
-FROM python:3.8-bullseye AS dev
+FROM python:3.12-bullseye AS dev
 RUN apt-get -qq update && apt-get install -qq -y git curl bash zip
 
 ENV DOCKER_VERSION=20.10.11
