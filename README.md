@@ -26,7 +26,7 @@ Develop and debug AWS SAM functions locally from VS Code Dev Containers
 
 ### `Configured debug type 'debugpy' is not supported.`
 
-Happens because you `Start Debugging` while the `ms-python.debugpy` VSCode extension is still installing. Solution: wait for the extension to install, you can check the installation status it in VSCode's Extensions view.
+Happens because you `Start Debugging` while the `ms-python.debugpy` VSCode extension is still installing. Solution: wait for the extension to install, you can check the installation status in VSCode's Extensions view.
 
 ### Does not work on arm64
 
