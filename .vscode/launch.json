@@ -3,11 +3,13 @@
   "configurations": [
     {
       "name": "Python: Remote Attach",
-      "type": "python",
+      "type": "debugpy",
       "request": "attach",
       "preLaunchTask": "Debug Python Lambda Function",
-      "port": 5890,
-      "host": "host.docker.internal",
+      "connect": {
+        "port": 5890,
+        "host": "host.docker.internal",
+      },
       "pathMappings": [
         {
           "localRoot": "${workspaceFolder}/src",

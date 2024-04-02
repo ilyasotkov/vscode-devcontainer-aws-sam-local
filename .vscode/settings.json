@@ -1,5 +1,4 @@
 {
-  "terminal.integrated.shell.linux": "/bin/bash",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
@@ -30,21 +29,13 @@
     "editor.insertSpaces": true,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
-  "python.pythonPath": "/usr/local/bin/python",
-  "python.formatting.provider": "black",
+  "python.defaultInterpreterPath": "/usr/local/bin/python",
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": false,
-  "python.sortImports.args": [
-    "--profile=black"
-  ],
-  "python.linting.enabled": true,
-  "python.linting.lintOnSave": true,
-  "python.linting.pylintEnabled": true,
-  "python.linting.pylintUseMinimalCheckers": false,
   "python.testing.pytestEnabled": true,
   "python.testing.autoTestDiscoverOnSaveEnabled": true,
   "python.analysis.extraPaths": [
