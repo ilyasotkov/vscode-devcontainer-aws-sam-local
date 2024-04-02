@@ -6,7 +6,7 @@ Develop and debug AWS SAM functions locally from VS Code Dev Containers
 
 ## Prerequisites
 
-- Docker (tested on macOS and Linux)
+- Docker (tested on macOS, Linux, and GitHub Codespaces)
 - VS Code with *Remote - Containers* extension installed
 
 ## Usage
@@ -15,7 +15,7 @@ Develop and debug AWS SAM functions locally from VS Code Dev Containers
     ```sh
     git clone https://github.com/ilyasotkov/aws-sam-local-python-devcontainer.git
     ```
-2. (Only needed on Linux): Modify [.devcontainer/devcontainer.json](https://github.com/ilyasotkov/aws-sam-local-python-devcontainer/blob/main/.devcontainer/devcontainer.json) by uncommenting one of the lines in `runArgs` property depending on your Docker version.
+2. (Only needed on Linux or GitHub Codespaces): Modify [.devcontainer/devcontainer.json](https://github.com/ilyasotkov/aws-sam-local-python-devcontainer/blob/main/.devcontainer/devcontainer.json) by uncommenting one of the lines in `runArgs` property depending on your Docker version.
 
 3. Open the cloned folder in VS Code. You'll be prompted to reopen in container, agree by pressing "Reopen in container".
 3. Wait for container image to build and container to launch and VS Code extensions to download.
