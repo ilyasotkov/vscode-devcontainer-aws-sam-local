@@ -32,6 +32,7 @@
       "source.organizeImports": "explicit"
     }
   },
+  "python.defaultInterpreterPath": "/usr/local/bin/python",
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": false,
